@@ -24,7 +24,7 @@ The user shoud be able to
 
 ### Screenshot
 
-![](./screenshot-1.png)
+![](./desktop.png)
 
 ## Author
 
