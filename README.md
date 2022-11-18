@@ -4,10 +4,12 @@
 
 The user shoud be able to
 
-1. view all projects
-2. view all todos in each project
-3. expand a single todo to see/edit its details
-4. delete a todo
+1. add todos
+2. view all todos in each category
+3. view all projects
+4. view all todos in each project
+5. expand a single todo to see/edit its details
+6. delete a todo
 
 ### Built with
 
