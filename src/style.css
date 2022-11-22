@@ -53,6 +53,9 @@ body {
 
 button {
   font-family: 'Rubik', sans-serif;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 button:focus-visible {
@@ -305,8 +308,7 @@ nav {
   border-radius: 50%;
 }
 
-.delete:link,
-.delete:visited {
+.delete {
   justify-self: end;
   font-size: 20px;
   color: rgba(96, 96, 96, 0.8);
@@ -409,13 +411,13 @@ main {
   z-index: 10;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 15px;
   box-shadow: var(--shadow);
   font-size: 18px;
 }
 
-.remove:link,
-.remove:visited {
+.remove {
   color: var(--color-danger);
 }
 
@@ -575,20 +577,17 @@ footer a:visited {
     filter: brightness(110%);
   }
 
-  .delete:link,
-  .delete:visited {
+  .delete {
     opacity: 0;
     visibility: hidden;
   }
 
-  .dropdown-item:hover .delete:link,
-  .dropdown-item:hover .delete:visited {
+  .dropdown-item:hover .delete {
     opacity: 1;
     visibility: visible;
   }
 
-  .delete:link:hover,
-  .delete:visited:hover {
+  .delete:hover {
     color: var(--color-danger);
   }
 

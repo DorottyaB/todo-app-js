@@ -41,8 +41,8 @@ function createTaskRow(task) {
   const checkbox = document.createElement('input');
   const todo = document.createElement('p');
   const dueDate = document.createElement('p');
-  const edit = document.createElement('a');
-  const remove = document.createElement('a');
+  const edit = document.createElement('button');
+  const remove = document.createElement('button');
 
   checkbox.setAttribute('type', 'checkbox');
 
@@ -83,9 +83,7 @@ function createTaskRow(task) {
 
   todo.textContent = task.title;
   edit.textContent = 'Edit';
-  edit.setAttribute('href', '#');
   remove.textContent = 'Remove';
-  remove.setAttribute('href', '#');
   const formattedDate = task.date.replaceAll('-', '.');
   dueDate.textContent = `${formattedDate}.`;
 
@@ -197,9 +195,8 @@ function createProjectsList(project) {
   dropdownLink.setAttribute('href', '#');
   dropdownLink.classList.add('dropdown-item-link');
 
-  const remove = document.createElement('a');
+  const remove = document.createElement('button');
   remove.textContent = '×';
-  remove.setAttribute('href', '#');
   remove.title = 'delete';
   remove.classList.add('delete');
 
